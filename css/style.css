@@ -22,7 +22,12 @@ body{
 .logo{
 	position: relative;
 	z-index: 10;
-	width: 18%;
+	width: 20%;
+	top:0;
+	right: 0;
+	text-align: right;
+	margin-left: 70%;
+	margin-top: 10px;
 }
 
 .block-1{
@@ -83,6 +88,7 @@ body{
 
 .content {
 	padding-top: 40%;
+
 }
 
 h1{
@@ -101,4 +107,90 @@ h2{
 
 .p{
 	padding-left: 64px;
+}
+
+.block-m{
+	background-image: url("../img/mainbg.jpg");	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	display: flex;
+	flex: 1;
+	height: 50vh;
+	text-align: left;
+	position: relative;
+	flex-wrap: wrap;
+}
+
+div.row{
+	display: flex;
+}
+
+.blck{
+
+	background-color: black;
+}
+
+div.fade-m:hover{
+	background-color: #7F0052;
+	cursor: pointer;
+}
+
+
+.fade-m{
+	height: 50vh;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	opacity: .7;
+}
+
+.date{
+	height: 95px;
+	position: relative;
+	z-index: 10;
+	margin-left: 25px;
+	margin-top: 25px;
+	margin-bottom: 0;
+}
+
+.date h1{
+	font-weight: 500;
+	font-size: 60px; 
+	color: white;
+	margin:0;
+}
+
+.date p{
+	font-weight: 200;
+	font-size: 20px;
+	color: white;
+	margin-left: 13px;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+.event-title{
+	margin-top: 25px;
+	margin-left: 20px;
+	margin-bottom: 0;
+	z-index: 10;
+
+}
+
+.event-title h2{
+	font-weight: 500;
+	font-size: 23px;
+	color: white;
+}
+
+.event-description{
+	width: 80%;
+	color: white;
+	z-index: 10;
+	margin-left: 37px;
+	margin-top: 0;
+}
+
+.event-description p{
+	margin: 0;
 }
