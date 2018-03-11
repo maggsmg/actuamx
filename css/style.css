@@ -3,8 +3,33 @@
 }
 body{
 	font-family: 'Helvetica', sans-serif;
-	position: relative;
-	
+}
+
+/**
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    contenteditable attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that are clearfixed.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+    *zoom: 1;
 }
 
 .bg-black{
@@ -115,10 +140,11 @@ h2{
 	background-position: center;
 	display: flex;
 	flex: 1;
-	height: 50vh;
 	text-align: left;
 	position: relative;
 	flex-wrap: wrap;
+	padding: 40px;
+	height: 50%;
 }
 
 div.row{
@@ -135,12 +161,12 @@ div.fade-m:hover{
 	cursor: pointer;
 }
 
-
 .fade-m{
 	height: 50vh;
 	width: 100%;
 	position: absolute;
 	top: 0;
+	left: 0;
 	opacity: .7;
 }
 
@@ -148,9 +174,6 @@ div.fade-m:hover{
 	height: 95px;
 	position: relative;
 	z-index: 10;
-	margin-left: 25px;
-	margin-top: 25px;
-	margin-bottom: 0;
 }
 
 .date h1{
@@ -164,15 +187,9 @@ div.fade-m:hover{
 	font-weight: 200;
 	font-size: 20px;
 	color: white;
-	margin-left: 13px;
-	margin-top: 0;
-	margin-bottom: 0;
 }
 
 .event-title{
-	margin-top: 25px;
-	margin-left: 20px;
-	margin-bottom: 0;
 	z-index: 10;
 
 }
@@ -187,10 +204,35 @@ div.fade-m:hover{
 	width: 80%;
 	color: white;
 	z-index: 10;
-	margin-left: 37px;
-	margin-top: 0;
 }
 
 .event-description p{
 	margin: 0;
+}
+
+.navbar{
+	background-color: black;
+	height: 20vh;
+	width: 100%;
+
+}
+
+.navbar-logo{
+	height: 40px;
+	float: right;
+}
+
+.back-button{
+	float: left;
+	color: gray;
+	font-size: 20px;
+	text-decoration: none;
+}
+
+.back-button:hover{
+	color: #7F0052;
+}
+
+.event-list{
+	height: 80vh;
 }
