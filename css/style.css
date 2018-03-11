@@ -39,9 +39,7 @@ body{
 }
 
 .container{
-	/*flex-direction: row;*/
 	display: flex;
-
 }
 
 .logo{
@@ -113,9 +111,11 @@ body{
 
 .content {
 	padding-top: 40%;
-
 }
 
+h1,h2,h3,h4,h5,h6{
+	margin: 0;
+}
 h1{
 	font-weight: 100;
 	font-size: 70px; 
@@ -125,96 +125,67 @@ h2{
 	font-weight: 100;
 	font-size: 30px;
 }
+.b{padding-right: 14px; }
+.p{padding-left: 64px; }
 
-.b{
-	padding-right: 14px;
-}
-
-.p{
-	padding-left: 64px;
+p{
+	margin: 0;
 }
 
 .block-m{
-	background-image: url("../img/mainbg.jpg");	background-size: cover;
+	background-image: url("../img/mainbg.jpg");	
+	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
-	display: flex;
 	flex: 1;
+	flex-wrap: wrap;
 	text-align: left;
 	position: relative;
-	flex-wrap: wrap;
 	padding: 40px;
-	height: 50%;
 }
 
-div.row{
+.row{
 	display: flex;
 }
 
 .blck{
-
 	background-color: black;
 }
 
-div.fade-m:hover{
-	background-color: #7F0052;
-	cursor: pointer;
-}
-
 .fade-m{
-	height: 50vh;
 	width: 100%;
-	position: absolute;
-	top: 0;
+	height: 100%;
 	left: 0;
+	top: 0;
 	opacity: .7;
+	position: absolute;
+	z-index: 1;
 }
 
-.date{
-	height: 95px;
-	position: relative;
-	z-index: 10;
-}
 
-.date h1{
-	font-weight: 500;
-	font-size: 60px; 
-	color: white;
-	margin:0;
-}
-
-.date p{
-	font-weight: 200;
-	font-size: 20px;
-	color: white;
-}
 
 .event-title{
-	z-index: 10;
-
 }
 
-.event-title h2{
+.event-title h2 {
 	font-weight: 500;
 	font-size: 23px;
 	color: white;
 }
 
-.event-description{
+.event-description {
 	width: 80%;
 	color: white;
-	z-index: 10;
 }
 
 .event-description p{
 	margin: 0;
 }
 
-.navbar{
+.navbar {
 	background-color: black;
 	height: 20vh;
 	width: 100%;
-
 }
 
 .navbar-logo{
@@ -236,3 +207,21 @@ div.fade-m:hover{
 .event-list{
 	height: 80vh;
 }
+.event-list > .row{
+	height: 50%;
+}
+.block-content {
+	position: relative;
+	z-index: 10;
+	color: #fff;
+}
+.col-md-3 {
+	flex-grow: 3;
+}
+.col-md-9 {
+	flex-grow: 9;
+}
+.navbar {
+	padding: 5% 2%;
+}
+
