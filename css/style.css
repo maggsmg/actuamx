@@ -162,15 +162,9 @@ p{
 	z-index: 1;
 }
 
-
-
 .event-title{
-}
-
-.event-title h2 {
-	font-weight: 500;
-	font-size: 23px;
-	color: white;
+	font-weight: 600;
+	font-size: 20px;
 }
 
 .event-description {
@@ -191,6 +185,9 @@ p{
 .navbar-logo{
 	height: 40px;
 	float: right;
+	display: block;
+	position: relative;
+	top: -12px;
 }
 
 .back-button{
@@ -198,6 +195,7 @@ p{
 	color: gray;
 	font-size: 20px;
 	text-decoration: none;
+	display: block;
 }
 
 .back-button:hover{
@@ -220,8 +218,39 @@ p{
 }
 .col-md-9 {
 	flex-grow: 9;
+	padding-top: 10px;
 }
 .navbar {
 	padding: 5% 2%;
 }
 
+.number{
+	font-size: 40px;
+}
+
+
+.block-content .row{
+	display: flex;
+	margin-top: 10px;
+}
+
+.block-m:hover .fade-m{
+	background-color: #7F0052;
+	cursor: pointer;
+}
+
+.col-md-4{
+	flex-grow: 4;
+}
+
+.col-md-8{
+	flex-grow: 9;
+}
+
+.col-md-2{
+	flex-grow: 1;
+}
+
+.col-md-10{
+	flex-grow: 11;
+}
