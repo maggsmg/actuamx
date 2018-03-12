@@ -1,11 +1,5 @@
 <?php require_once('header.php'); ?>
-
-	<header class="navbar-events cf">
-		<div class="content">
-			<a class="back-button" href="home.php">regresar</a>
-			<img class="navbar-logo" src="img/actua.svg">
-		</div>
-	</header>
+	<?php require_once('navbar.php') ?>
 	<div class="event-list container-fluid">
 		<div class="row">
 			<div class="block-m">

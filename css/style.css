@@ -230,7 +230,7 @@ section.one .tagline {
 	content: ':';
 	color: #de268f;
 	position: absolute;
-	font-size: 3rem;
+	font-size: 5rem;
 	top: -3px;
 	right: -25px;
 }
@@ -444,5 +444,69 @@ section.home.three #block-2 h2{
 .brands img{
 	display: block;
 	width: 40%;
+}
+
+/* Foro de Candidatos
+--------------------------------------------------------------------
+*/
+.foro .content {
+	min-height: 80vh;
+	color: white;
+}
+.foro .fade-bp {
+	background-color: #de268f;
+}
+.foro h1{
+	font-weight: 300;
+	font-size: 3.5rem;
+	margin-bottom: 40px;
+}
+.foro .right{
+	padding-left: 4%;
+}
+.foro .container-small{
+	/*width: 90%;*/
+	padding: 5% 3%;
+	/*margin: 0 auto;*/
+}
+.foro .date {
+	font-size: 2.2rem;
+	text-align: center;
+	font-weight: 600;
+	line-height: 5rem;
+	margin-bottom: 40px;
+	
+}
+.foro .right p.desc{
+	font-size: 20px;
+	line-height: 160%;
+	font-weight: 300;
+	width: 80%;
+}
+.foro .date span.number{
+	font-size: 8rem;
+	font-weight: 800;
+	display: block;
+}
+.foro section.candidatos{
+	width: 80%;
+}
+.foro .circleimg {
+	border-radius: 50%;
+	display: block; 
+	object-fit: cover;
+	width: 220px;
+	height: 220px;
+	border: 6px solid #fff;
+	margin: 0 auto;
+	margin-bottom: 30px;
+}
+.candidatos .candidato .name{
+	text-align: center;
+	font-size: 24px;
+	font-weight: 600;
+}
+.foro section.candidatos .row{
+	margin-bottom: 60px;
 }
 
