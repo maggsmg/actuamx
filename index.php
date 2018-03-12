@@ -21,7 +21,7 @@
 				<ul class="main-countdown"></ul>
 			</div>
 			<div class="row">
-				<p class="tagline">Lorem ipsum dolor sit amet consectetur</p>
+				<!-- <p class="tagline">Promoviendo el voto informado</p> -->
 			</div>
 		</div>
 		<div class="fade fade-bb"></div>
