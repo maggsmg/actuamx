@@ -12,7 +12,7 @@
 				</div>
 				<div class="col-md-10 right">
 					<h1>Foro de Candidatos</h1>
-					<p class="desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur hic, reiciendis laudantium sit dolorum minus expedita sed deleniti in perspiciatis, corporis magni sunt quis doloribus odio mollitia debitis voluptatibus? Nemo.</p>
+					<p class="desc">Evento que tiene como finalidad que los estudiantes puedan conocer a los candidatos y tener una opini&oacute;n cr&iacute;tica respecto de cada uno de ellos. As&iacute; como facilitar las acciones bilaterales que se deben de llevar a cabo entre servidor p&uacute;blico y gobernado.</p>
 					<section class="candidatos">
 						<div class="row">
 							<div class="col-md-4">

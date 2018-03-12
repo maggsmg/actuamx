@@ -10,11 +10,11 @@
 							<p>marzo</p>
 						</div>
 						<div class="col-md-10">
-							<h2 class="event-title">Lanzamiento<br> Reto Act&uacute;a</h2>
+							<h2 class="event-title">Lanzamiento Act&uacute;a"</h2>
 						</div>
 					</div>
 					<div class="row">
-						<p class="event-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos corporis numquam, dolorum porro voluptatum exercitationem consectetur minus. Nisi, omnis, natus.</p>
+						<p class="event-description">Presentaci&oacute;n del evento, lanzamiento del Reto Act&uacute;a y presentaci&oacute;n del libro: "Un M&eacute;xico Posible".</p>
 					</div>
 				</div>
 				<div class="fade-m"></div>
@@ -27,11 +27,11 @@
 							<p>marzo</p>
 						</div>
 						<div class="col-md-10">
-							<h2 class="event-title">Lanzamiento<br> Reto Act&uacute;a</h2>
+							<h2 class="event-title">Panel: “&iquest;Por qu&eacute; votar este 2018?”</h2>
 						</div>
 					</div>
 					<div class="row">
-						<p class="event-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos corporis numquam, dolorum porro voluptatum exercitationem consectetur minus. Nisi, omnis, natus.</p>
+						<p class="event-description">Panel para exponer las razones que cualquier mexicano debe poseer para salir a votar en estas elecciones.</p>
 					</div>
 				</div>
 				<div class="fade-m"></div>
@@ -40,15 +40,15 @@
 				<div class="block-content container-fluid">
 					<div class="row first">
 						<div class="col-md-2">
-							<p class="number">12</p>
+							<p class="number">21</p>
 							<p>marzo</p>
 						</div>
 						<div class="col-md-10">
-							<h2 class="event-title">Lanzamiento<br> Reto Act&uacute;a</h2>
+							<h2 class="event-title">Conferencia: El impacto de las Fake News en el proceso electoral</h2>
 						</div>
 					</div>
 					<div class="row">
-						<p class="event-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos corporis numquam, dolorum porro voluptatum exercitationem consectetur minus. Nisi, omnis, natus.</p>
+						<p class="event-description">Como parte de las actividades del Reto Act&uacute;a, conferencia destinada a exponer la influencia que tienen las noticias falsas en el votante.</p>
 					</div>
 				</div>
 				<div class="fade-m"></div>
@@ -60,15 +60,15 @@
 				<div class="block-content container-fluid">
 					<div class="row first">
 						<div class="col-md-2">
-							<p class="number">12</p>
-							<p>marzo</p>
+							<p class="number">5</p>
+							<p>abril</p>
 						</div>
 						<div class="col-md-10">
-							<h2 class="event-title">Lanzamiento<br> Reto Act&uacute;a</h2>
+							<h2 class="event-title">Panel: El M&eacute;xico que quiero</h2>
 						</div>
 					</div>
 					<div class="row">
-						<p class="event-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos corporis numquam, dolorum porro voluptatum exercitationem consectetur minus. Nisi, omnis, natus.</p>
+						<p class="event-description">Panel para la exposici&oacute;n del M&eacute;xico que todos los mexicanos queremos ver crecer.</p>
 					</div>
 				</div>
 				<div class="fade-m"></div>
@@ -78,14 +78,14 @@
 					<div class="row first">
 						<div class="col-md-1">
 							<p class="number">12</p>
-							<p>marzo</p>
+							<p>abril</p>
 						</div>
 						<div class="col-md-11">
-							<h2 class="event-title">Lanzamiento Reto Act&uacute;a</h2>
+							<h2 class="event-title">Premiaci&oacute;n Reto Act&uacute;a</h2>
 						</div>
 					</div>
 					<div class="row">
-						<p class="event-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore fugit tempore, quisquam, vel omnis fugiat eaque laboriosam quis eveniet eius, laborum temporibus vitae! Repudiandae, culpa quasi. A ullam, nihil adipisci inventore, ex earum possimus, aliquam commodi debitis culpa tenetur explicabo beatae aspernatur, doloribus. Error nemo aliquid incidunt quos numquam beatae doloribus excepturi, accusantium vel sequi, quisquam tenetur ipsam voluptatum eligendi?</p>
+						<p class="event-description">Premiaci&oacute;n para las propuestas ganadoras del Reto Act&uacute;a que proveer&aacute;n una soluci&oacute;n a la desinformaci&oacute;n del votante a causa de las fake news.</p>
 					</div>
 				</div>
 				<div class="fade-m"></div>

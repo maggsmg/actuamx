@@ -30,7 +30,7 @@
 	<section class="two bg-black tac">
 		<div class="container">
 			<h2>&iquest;Qu&eacute; es act&uacute;a?</h2>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut voluptatibus maiores ipsum, pariatur dolores! Doloribus obcaecati quos ipsum cupiditate ex.</p>
+			<p>La plataforma estudiantil que busca fomentar la participación activa y responsable de los estudiantes en el proceso electoral.</p>
 		</div>
 	</section>
 	<section class="three home">
