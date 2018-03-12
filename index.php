@@ -80,5 +80,11 @@
 		$('.nav-icon').click(function() {
 			$('ul.nav-links').toggleClass('hidden');
 		})
+		$("#block-1").click(function() {
+			window.location.href = "events.php";
+		});
+		$("#block-2").click(function() {
+			window.location.href = "foro.php";
+		});
 	</script>
 <?php require_once('footer.php'); ?>
