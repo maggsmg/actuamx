@@ -11,7 +11,7 @@
 				<img class="logo" src="img/actua.svg">
 			</div>
 			<div class="row">
-				<h2>COUNTDOWN GOES HERE</h2>
+				<ul class="main-countdown"></ul>
 			</div>
 			<div class="row">
 				<p class="tagline">Lorem ipsum dolor sit amet consectetur</p>
@@ -61,5 +61,14 @@
 			</div>
 		</div>
 	</footer>
-
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+	<script src="js/jquery.countdown.min.js"></script>
+	<script>
+		$('.main-countdown').countdown({
+			date: "April 24, 2018 11:00:00",
+			render: function(data) {
+				$(this.el).html("<li>" + this.leadingZeros(data.days, 2) + " <span>days</span></li><li>" + this.leadingZeros(data.hours, 2) + " <span>hrs</span></li><li>" + this.leadingZeros(data.min, 2) + " <span>min</span></li><li>" + this.leadingZeros(data.sec, 2) + " <span>sec</span></li>");
+			}
+		});
+	</script>
 <?php require_once('footer.php'); ?>
