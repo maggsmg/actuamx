@@ -67,7 +67,7 @@
 		$('.main-countdown').countdown({
 			date: "April 24, 2018 11:00:00",
 			render: function(data) {
-				$(this.el).html("<li>" + this.leadingZeros(data.days, 2) + " <span>days</span></li><li>" + this.leadingZeros(data.hours, 2) + " <span>hrs</span></li><li>" + this.leadingZeros(data.min, 2) + " <span>min</span></li><li>" + this.leadingZeros(data.sec, 2) + " <span>sec</span></li>");
+				$(this.el).html("<li>" + this.leadingZeros(data.days, 2) + " <br><span>d&iacute;as</span></li><li class='colon'>" + this.leadingZeros(data.hours, 2) + " <br><span>horas</span></li><li class='colon'>" + this.leadingZeros(data.min, 2) + " <br><span>minutos</span></li><li>" + this.leadingZeros(data.sec, 2) + " <br><span>segundos</span></li>");
 			}
 		});
 	</script>
