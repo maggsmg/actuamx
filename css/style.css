@@ -220,7 +220,7 @@ section.one .tagline {
 }
 .main-countdown li {
 	display: inline-block;
-	margin: 0 20px;
+	margin: 0 15px;
 	position: relative;
 	font-size: 5rem;
 	font-weight: 300;
@@ -232,7 +232,7 @@ section.one .tagline {
 	position: absolute;
 	font-size: 5rem;
 	top: -3px;
-	right: -25px;
+	right: -15px;
 }
 .main-countdown span {
 	/*display: block;*/
