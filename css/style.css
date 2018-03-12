@@ -5,6 +5,22 @@ body{
 	font-family: 'Helvetica', sans-serif;
 }
 
+
+h1, h2, h3, h4, h5, h6{
+	margin: 0;
+}
+
+h1{
+	font-size: 40px; 
+}
+
+h2 {
+	font-size: 36px;
+}
+p{
+	margin: 0;
+}
+
 /**
  * For modern browsers
  * 1. The space content is one way to avoid an Opera bug when the
@@ -31,73 +47,173 @@ body{
 .cf {
     *zoom: 1;
 }
+.tac{text-align: center;}
+.white{color: #fff !important;}
+/*.row{display: flex; }*/
+/*.col {flex: 1; }*/
 
-.bg-black{
+.bg-black {
 	background-color: #000;
 	color:#fff;
-	width: 100%;
-	text-align: center;
-	padding: 10% 20%; 
 }
-
-.bg-black p{
-	margin-top: 30px;
-}
-
-.container{
-	display: flex;
-	width: 100%;
-}
-
-.logo{
-	position: relative;
-	z-index: 10;
-	width: 20%;
-	top:0;
-	right: 0;
-	text-align: right;
-	margin-left: 70%;
-	margin-top: 10px;
-}
-
-.block-1{
-	background-image: url("../img/mainbg.jpg");
-	padding-top: 300px;
-}
-.block-1,.block-2 {
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-position: center;
-	flex: 1;
-	height: 100vh;
-	text-align: center;
-}
-.block-2{
-	background-image: url("../img/mainbg.jpg");
-	padding-top: 300px;
-}
-
 .block-img {
 	display: block;
 	width: 100%;
 }
-.fade {
+
+
+/*.bg-black p{
+	margin-top: 30px;
+}
+*/
+
+.container {
+	width: 60%;
+	margin: 0 auto;
+}
+
+/* Navbar
+--------------------------------------------------------------------
+*/
+
+/*TODO: change this*/
+.main-nav {
+	color: white;
+	position: absolute;
+	right: 0;
+	top: 0;
+	z-index: 100;
+}
+/* Home
+--------------------------------------------------------------------
+*/
+
+section {
+	padding: 8% 0;
+}
+section h2{
+	margin-bottom: 40px;
+}
+section p{
+	font-weight: 300;
+}
+/* SECTION 1 
+--------------------------------------
+*/
+/*.container {
+	display: flex;
 	width: 100%;
+}
+*/
+.img-bg {
+	background-image: url("../img/mainbg.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	position: relative;
+}
+
+section.one {
+	background-image: url("../img/mainbg.jpg");
+	background-position: center -100px;
 	height: 100vh;
+	padding: 15% 2%;
+}
+.logo {
+	width: 100%;
+	/*width: 40%;*/
+	display: block;
+	/*margin: 0 auto;*/
+}
+section.one .content {
+	width: 600px;
+	margin: 0 auto;
+}
+section.one .row {
+	margin-bottom: 40px;
+	width: 100%;
+	display: block;
+}
+section.one .tagline {
+	font-weight: 300;
+	font-size: 28px;
+	letter-spacing: 2px;
+}
+.fade {
 	position: absolute;
 	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
 	opacity: .7;
+	z-index: 0;
 }
-.fade-bb{
+.fade-bb {
 	left: 0;
 	background-color: black;
 }
-.fade-bp{
+.fade-bp {
 	right: 0;
 	background-color: #7F0052;
 }
+.has-overlay .content {
+	position: relative;
+	z-index: 10;
+}
 
-.block-title{
+/* SECTION 2
+--------------------------------------
+*/
+
+section.two {
+	padding: 10% 0;
+}
+section.two p {
+	font-size: 24px;
+	line-height: 180%;
+}
+
+/* SECTION 3
+--------------------------------------
+*/
+
+section.three {
+	padding: 0;
+}
+section.three h2 {
+	margin: 0;
+	font-weight: 300;
+	font-size: 6rem;
+}
+section.three h2 span {
+	font-size: 2rem;
+}
+section.home.three .block {
+	padding: 16% 12%;
+	cursor: pointer;
+}
+section.home.three .block .fade{
+	transition: opacity 300ms;
+}
+section.home.three .block:hover .fade{
+	opacity: .5;
+}
+section.home.three #block-1{
+	text-align: left;
+}
+section.home.three #block-2{
+	text-align: right;
+}
+section.home.three #block-1 h2{
+	line-height: 90%;
+}
+section.home.three #block-2 h2{
+	line-height: 50%;
+	position: relative;
+	left: -15%;
+	top: 60px;
+}
+/*.block-title {
 	z-index: 10;
 	text-align: center;
 	width: 100%;
@@ -116,31 +232,14 @@ body{
 	color: white;
 	font-weight: 300;
 }
+*/
 
-.content {
-	padding-top: 40%;
-}
+/* Events
+--------------------------------------------------------------------
+*/
 
-h1,h2,h3,h4,h5,h6{
-	margin: 0;
-}
-h1{
-	font-weight: 400;
-	font-size: 40px; 
-}
 
-h2{
-	font-weight: 100;
-	font-size: 30px;
-}
-.b{padding-right: 14px; }
-.p{padding-left: 64px; }
-
-p{
-	margin: 0;
-}
-
-.block-m{
+.block-m {
 	background-image: url("../img/mainbg.jpg");	
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -152,13 +251,6 @@ p{
 	padding: 40px;
 }
 
-.row{
-	display: flex;
-}
-
-.blck{
-	background-color: black;
-}
 
 .fade-m{
 	width: 100%;
@@ -221,13 +313,13 @@ p{
 	z-index: 10;
 	color: #fff;
 }
-.col-md-3 {
+/*.col-md-3 {
 	flex-grow: 3;
 }
 .col-md-9 {
 	flex-grow: 9;
 	padding-top: 10px;
-}
+}*/
 .navbar {
 	padding: 5% 2%;
 }
@@ -247,7 +339,7 @@ p{
 	cursor: pointer;
 }
 
-.col-md-4{
+/*.col-md-4{
 	flex-grow: 4;
 }
 
@@ -261,7 +353,7 @@ p{
 
 .col-md-10{
 	flex-grow: 11;
-}
+}*/
 
 .navbar{
 	height: 20vh;
@@ -293,17 +385,11 @@ p{
 	width: 80%;
 }
 
-.brands{
-	background-color: black;
-	padding: 1% 5%;
+.brands {
+	padding: 3% 5%;
+}
+.brands img{
+	display: block;
+	width: 40%;
 }
 
-.actua{
-	float:left;
-	width: 15%;
-}
-
-.feitesm{
-	float: right;
-	width: 15%;
-}

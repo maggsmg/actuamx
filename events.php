@@ -1,13 +1,5 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<meta charset="UTF-8">
-	<title>Act&uacute;a</title>
-	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
-	<link rel="stylesheet" type="text/css" href="css/style.css">
-	
-</head>
-<body>
+<?php require_once('header.php'); ?>
+
 	<header class="navbar-events cf">
 		<a class="back-button" href="home.html">regresar</a>
 		<img class="navbar-logo" src="img/actua.svg">
@@ -29,7 +21,7 @@
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos corporis numquam, dolorum porro voluptatum exercitationem consectetur minus. Nisi, omnis, natus.</p>
 					</div>
 				</div>
-				<div class="fade-m blck"></div>
+				<div class="fade-m bg-black"></div>
 			</div>
 			<div class="block-m">
 				<div class="block-content">
@@ -46,7 +38,7 @@
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos corporis numquam, dolorum porro voluptatum exercitationem consectetur minus. Nisi, omnis, natus.</p>
 					</div>
 				</div>
-				<div class="fade-m blck"></div>
+				<div class="fade-m bg-black"></div>
 			</div>
 			<div class="block-m ">
 				<div class="block-content">
@@ -63,7 +55,7 @@
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos corporis numquam, dolorum porro voluptatum exercitationem consectetur minus. Nisi, omnis, natus.</p>
 					</div>
 				</div>
-				<div class="fade-m blck"></div>
+				<div class="fade-m bg-black"></div>
 			</div>
 		</div>
 
@@ -83,7 +75,7 @@
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos corporis numquam, dolorum porro voluptatum exercitationem consectetur minus. Nisi, omnis, natus.</p>
 					</div>
 				</div>
-				<div class="fade-m blck"></div>
+				<div class="fade-m bg-black"></div>
 			</div>
 			<div class="block-m col-md-8">
 				<div class="block-content">
@@ -100,11 +92,10 @@
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos corporis numquam, dolorum porro voluptatum exercitationem consectetur minus. Nisi, omnis, natus.</p>
 					</div>
 				</div>
-				<div class="fade-m blck"></div>
+				<div class="fade-m bg-black"></div>
 			</div>
 		</div>
 
 	</section>
-
-</body>
-</html>
+	
+<?php require_once('footer.php'); ?>
