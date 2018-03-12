@@ -8,6 +8,7 @@
 			<li><a href="#">Inicio</a></li>
 			<li><a href="events.php">Actividades de preforo</a></li>
 			<li><a href="foro.php">Foro de candidatos</a></li>
+			<li><a href="">El reto</a></li>
 		</ul>
 	</nav>
 
@@ -49,6 +50,13 @@
 					<div class="fade fade-bp"></div>
 				</div>
 			</div>
+		</div>
+	</section>
+
+	<section class="two bg-black tac">
+		<div class="container reto">
+			<img class="logo-reto" src="img/retoactualogo.svg">
+			<a class="pink-button" href="http://actua.feitesm.mx/reto">Ir al reto</a>
 		</div>
 	</section>
 

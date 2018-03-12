@@ -551,3 +551,27 @@ section.home.three #block-2 h2{
 	margin-bottom: 60px;
 }
 
+.pink-button{
+	margin-top: 50px;
+	margin: auto;
+	background-color: #de268f;
+	border:none;
+	width: 200px;
+	height: 50px;
+	color: white;
+	font-size: 20px;
+	display: block;
+	padding-top:15px;
+	text-decoration: none;
+}
+
+.logo-reto{
+	width: 80%;	
+	margin-bottom: 50px;
+}
+
+.reto{
+	text-align: center;
+	display: block;
+	padding-top: 60px;
+}
