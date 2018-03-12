@@ -1,7 +1,14 @@
 <?php require_once('header.php'); ?>
 
 	<nav class="main-nav">
-		<p class="white">Hamburger here</p>
+			<div class="d-flex justify-content-end">
+				<a href="#" class="nav-icon"><img src="img/hamburger.svg" alt="mainmenu"></a>
+			</div>
+		<ul class="nav-links w3-animate-top hidden" role="navigation">
+			<li><a href="#">Inicio</a></li>
+			<li><a href="events.php">Actividades de preforo</a></li>
+			<li><a href="foro.php">Foro de candidatos</a></li>
+		</ul>
 	</nav>
 
 
@@ -23,7 +30,7 @@
 	<section class="two bg-black tac">
 		<div class="container">
 			<h2>&iquest;Qu&eacute; es act&uacute;a?</h2>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui iure quis eaque iusto nemo voluptate, beatae esse deleniti quisquam! Labore, ipsam, perspiciatis. Cumque doloremque sit veritatis corporis quaerat eos, voluptatum quae rem maxime, eum distinctio commodi quas harum nostrum eius.</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut voluptatibus maiores ipsum, pariatur dolores! Doloribus obcaecati quos ipsum cupiditate ex.</p>
 		</div>
 	</section>
 	<section class="three home">
@@ -70,5 +77,8 @@
 				$(this.el).html("<li>" + this.leadingZeros(data.days, 2) + " <br><span>d&iacute;as</span></li><li class='colon'>" + this.leadingZeros(data.hours, 2) + " <br><span>horas</span></li><li class='colon'>" + this.leadingZeros(data.min, 2) + " <br><span>minutos</span></li><li>" + this.leadingZeros(data.sec, 2) + " <br><span>segundos</span></li>");
 			}
 		});
+		$('.nav-icon').click(function() {
+			$('ul.nav-links').toggleClass('hidden');
+		})
 	</script>
 <?php require_once('footer.php'); ?>

@@ -50,7 +50,11 @@ body{
 	font-family: 'HelveticaNeue', Helvetica, sans-serif;
 }
 
-
+a{
+	color: #de268f;
+	text-decoration: underline;
+	text-decoration-style: dotted;
+}
 h1, h2, h3, h4, h5, h6{
 	margin: 0;
 }
@@ -122,13 +126,50 @@ p{
 */
 
 /*TODO: change this*/
+.hidden{
+	display: none;
+}
 .main-nav {
 	color: white;
 	position: absolute;
-	right: 0;
-	top: 0;
+	right: 40px;
+	top: 40px;
 	z-index: 100;
 }
+.main-nav .nav-icon{
+	width: 30px;
+	display: block;
+}
+.main-nav .nav-links {
+	margin-top: 20px;
+}
+.main-nav ul {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	text-align: right;
+}
+.main-nav ul li{
+	margin-bottom: 15px;
+}
+.main-nav ul li a{
+	color: white;
+	text-decoration: none;
+	font-size: 20px;
+	font-weight: 300;
+}
+.main-nav ul li a:hover{
+	color: #de268f;
+}
+.main-nav .nav-icon img{
+	display: block;
+	width: 100%;
+}
+
+@keyframes animatetop{from{top:-300px;opacity:0} to{top:0;opacity:1}}
+@keyframes animatebottom{from{bottom:-300px;opacity:0} to{bottom:0;opacity:1}}
+.w3-animate-top{position:relative;animation:animatetop 0.4s}
+.w3-animate-bottom{position:relative;animation:animatebottom 0.4s}
 /* Home
 --------------------------------------------------------------------
 */
