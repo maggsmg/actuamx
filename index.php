@@ -53,10 +53,10 @@
 		</div>
 	</section>
 
-	<section class="two bg-black tac">
+	<section class="two bg-black tac" style="display: none;">
 		<div class="container reto">
 			<img class="logo-reto" src="img/retoactualogo.svg">
-			<a class="pink-button" href="http://actua.feitesm.mx/reto">Ir al reto</a>
+			<a class="pink-button" href="/reto">Ir al reto</a>
 		</div>
 	</section>
 
