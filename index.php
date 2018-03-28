@@ -8,7 +8,7 @@
 			<li><a href="#">Inicio</a></li>
 			<li><a href="events.php">Actividades de preforo</a></li>
 			<li><a href="foro.php">Foro de candidatos</a></li>
-			<li><a href="">El reto</a></li>
+			<li><a href="reto">El reto</a></li>
 		</ul>
 	</nav>
 
