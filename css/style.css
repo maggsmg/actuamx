@@ -536,8 +536,8 @@ section.home.three #block-2 h2{
 	border-radius: 50%;
 	display: block; 
 	object-fit: cover;
-	width: 220px;
-	height: 220px;
+	width: 180px;
+	height: 180px;
 	border: 6px solid #fff;
 	margin: 0 auto;
 	margin-bottom: 30px;
@@ -547,10 +547,10 @@ section.home.three #block-2 h2{
 	font-size: 24px;
 	font-weight: 600;
 }
-.foro section.candidatos .row{
+/*.foro section.candidatos .row{
 	margin-bottom: 60px;
 }
-
+*/
 .pink-button{
 	margin-top: 50px;
 	margin: auto;
@@ -575,3 +575,80 @@ section.home.three #block-2 h2{
 	display: block;
 	padding-top: 60px;
 }
+.foro .btn.bg-black.questionbtn{
+	text-decoration: none;
+	font-size: 1.3rem;
+	font-weight: 300;
+	padding: 15px;
+	margin-top: 40px;
+	display: block;
+	text-align: center;
+	transition: all 300ms;
+}
+.foro .btn.bg-black.questionbtn:hover{
+	/*background-color: #e13c9a;*/
+	background-color: #fff;
+	color: #000;
+}
+.sendquestion {
+	width: 80%;
+	padding-top: 0;
+	margin-top: 3%;
+}
+.sendquestion h2{
+	font-weight: 300;
+}
+.question-form label,
+.question-form textarea,
+.question-form input {
+	display: block;
+	width: 100%;
+	margin-bottom: 20px;
+	border: 0 none;
+}
+.question-form label small{
+	font-size: .9rem;
+}
+.question-form label{
+	font-size: 1.4rem;
+	font-weight: 300;
+	margin-bottom: 10px;
+}
+.question-form textarea{
+	height: 100px;
+	font-size: 1.5rem;
+	padding: 10px;
+	resize: none;
+	margin-bottom: 40px;
+}
+.question-form #category {
+	width: 100%;
+	display: block;
+	font-size: 1.2rem;
+	padding: 10px;
+	margin-bottom: 20px;
+}
+.question-form textarea,
+.question-form select,
+.question-form input[type="text"]{
+	background: rgba(255,255,255,.6);
+	border: 0 none;
+}
+.question-form input[type="text"]{
+	height: 40px;
+	padding: 8px 10px;
+}
+.question-form .submit.btn{
+	height: 60px;
+	border: 0 none;
+	cursor: pointer;
+	font-size: 1.2rem;
+	font-weight: 300;
+	transition: all 300ms;
+}
+.question-form .submit.btn:hover{
+	background-color: #fff;
+	color: #000;
+}
+
+
