@@ -58,7 +58,7 @@ $range = "Sheet1";
 $request_body = new Google_Service_Sheets_ValueRange();
 $request_body->setValues([$body]);
 
-$options = ['insertDataOption' => 'INSERT_ROWS', 'valueInputOption' => 'USER_ENTERED'];
+$options = ['insertDataOption' => 'INSERT_ROWS', 'valueInputOption' => 'RAW'];
 
 // Send the request
 $response = $service->spreadsheets_values->append($spreadsheetId, $range, $request_body, $options);
