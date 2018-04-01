@@ -43,9 +43,9 @@ define('SCOPES', implode(' ', [
 $client = new Google_Client();
 
 // TODO: remove after test
-$client->setHttpClient(new \GuzzleHttp\Client(array(
-	'verify' => 'C:\Program Files\Git\mingw64\ssl\certs\ca-bundle.crt',
-)));
+// $client->setHttpClient(new \GuzzleHttp\Client(array(
+// 	'verify' => 'C:\Program Files\Git\mingw64\ssl\certs\ca-bundle.crt',
+// )));
 
 $client->setApplicationName('Actua MX Manda tu Pregunta');
 $client->setScopes(SCOPES);
