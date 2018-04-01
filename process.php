@@ -1,16 +1,25 @@
 <?php
 
 if ($_SERVER['REQUEST_METHOD'] != 'POST') {
-	header("HTTP/1.0 405 Method Not Allowed");
+	header("HTTP/1.1 405 Method Not Allowed");
 	header("Allow: POST, HEAD");
 	die('Method disallowed');
 }
 
+// Post to Google Sheets
+require_once __DIR__ . '/vendor/autoload.php';
+
 date_default_timezone_set('America/Monterrey');
 
+$dotenv = new Dotenv\Dotenv(__DIR__);
+$dotenv->load();
 
 $posted = json_decode(file_get_contents('php://input'), true);
 
+if($posted == null) {
+	header("HTTP/1.1 500 Internal Server Error");
+	die('No arguments passed');
+}
 
 // Build body
 
@@ -24,11 +33,8 @@ if(!empty($posted['category']) && $posted['category'] != ""){
 
 $body = [$posted['name'], $topic, $now, $posted['pregunta']];
 
-// Post to Google Sheets
-require_once __DIR__ . '/vendor/autoload.php';
 
 // TODO: Change this to real path
-putenv('GOOGLE_APPLICATION_CREDENTIALS=./service-account.json');
 define('SCOPES', implode(' ', [
  	Google_Service_Sheets::SPREADSHEETS
 ]
@@ -37,15 +43,15 @@ define('SCOPES', implode(' ', [
 $client = new Google_Client();
 
 // TODO: remove after test
-// $client->setHttpClient(new \GuzzleHttp\Client(array(
-// 	'verify' => 'C:\Program Files\Git\mingw64\ssl\certs\ca-bundle.crt',
-// )));
+$client->setHttpClient(new \GuzzleHttp\Client(array(
+	'verify' => 'C:\Program Files\Git\mingw64\ssl\certs\ca-bundle.crt',
+)));
 
 $client->setApplicationName('Actua MX Manda tu Pregunta');
 $client->setScopes(SCOPES);
 $client->useApplicationDefaultCredentials();
 $service = new Google_Service_Sheets($client);
-$spreadsheetId = "1u0-7FpEanWWGa5Vr7zrDpYAg5RgKzdFfc890TkixYnE";
+$spreadsheetId = $_ENV['GOOGLE_SPREADSHEET_ID'];
 $range = "Sheet1";
 
 // Build sheets row
@@ -58,6 +64,8 @@ $options = ['insertDataOption' => 'INSERT_ROWS', 'valueInputOption' => 'USER_ENT
 $response = $service->spreadsheets_values->append($spreadsheetId, $range, $request_body, $options);
 $updates = $response->getUpdates();
 
+
+header('Content-Type: application/json');
 
 if($updates->updatedCells > 0) {
 	// Success
