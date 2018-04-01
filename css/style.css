@@ -598,6 +598,9 @@ section.home.three #block-2 h2{
 .sendquestion h2{
 	font-weight: 300;
 }
+.question-form {
+	transition: all 500ms;
+}
 .question-form label,
 .question-form textarea,
 .question-form input {
@@ -649,6 +652,13 @@ section.home.three #block-2 h2{
 .question-form .submit.btn:hover{
 	background-color: #fff;
 	color: #000;
+}
+.sendquestion .success-msg {
+	display: none;
+	opacity: 0;
+	font-size: 1.3rem;
+	transition: all 500ms;
+	padding-bottom: 24%;
 }
 
 

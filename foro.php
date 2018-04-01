@@ -50,7 +50,7 @@
 						<div class="row">
 							<div class="col">
 								<h2>Manda tu pregunta a los candidatos</h2>
-								<form action="#" class="question-form">
+								<form action="#" class="question-form" id="questionForm">
 									<label for="name">Tu nombre: <small>(opcional)</small></label>
 									<input type="text" name="name" id="name" />
 									<label for="category">Tema de tu pregunta:</label>
@@ -61,10 +61,11 @@
 										<option value="3">Pol&iacute;ticas P&uacute;blicas / Reformas Estructurales</option>
 										<option value="4">Otro</option>
 									</select>
-									<label for="pregunta">Tu pregunta:</label>
-									<textarea required name="pregunta" id="pregunta"></textarea>
+									<label for="question">Tu pregunta:</label>
+									<textarea required name="question" id="question"></textarea>
 									<input type="submit" value="Enviar" class="submit btn bg-black">
 								</form>
+								<p class="success-msg">&iexcl;Gracias! Tu pregunta ha sido registrada. <br><br> <small>El equipo de Act&uacute;a se reserva el derecho de seleccionar un subconjunto de las preguntas enviadas.</small></p>
 							</div>
 						</div>
 					</section>
@@ -74,4 +75,5 @@
 	</div>
 	<div class="fade fade-bp"></div>
 </div>
+<script src="js/question.js"></script>
 <?php require_once('footer.php'); ?>
